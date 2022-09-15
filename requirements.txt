@@ -16,3 +16,4 @@ threadpoolctl==2.1.0
 typing-extensions==3.10.0.0
 numpy
 whitenoise
+django-crispy-forms
