@@ -1,0 +1,373 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Electracker</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Elec<span class="bg-white text-black">tracker</span></a></h1>
+   
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{% url 'index' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'report' %}">Report</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'learn' %}">Learn</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'verify' %}">Verify</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'locate' %}">Locate</a></li>
+          <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'hausa' %}">Hausa</a></li>  
+             <li><a href="#">Igbo</a></li>  
+              <li><a href="#">Yoruba</a></li>
+              <li><a href="#">Igala</a></li>        </ul>
+            </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#services">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+  
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(static/assets/img/thugs.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Report Fraud and Violence</h2>
+                <p class="animate__animated animate__fadeInUp">Receiving any money or gift,
+for voting or to refrain from
+voting at any election is subjected to A maximum fine of N500,000
+or imprisonment for 12
+months or both according to Section 124 Electoral Act
+2010 of The
+Constitution of the Federal Republic of Nigeria, 1999 as amended.
+</p>
+                <div>
+                  <a href="fraud.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Report</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(static/assets/img/thugs.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Report Fraud and Violence</h2>
+                <p class="animate__animated animate__fadeInUp">Receiving any money or gift,
+for voting or to refrain from
+voting at any election is subjected to A maximum fine of N500,000
+or imprisonment for 12
+months or both according to Section 124 Electoral Act
+2010 of The
+Constitution of the Federal Republic of Nigeria, 1999 as amended.
+</p>
+
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(static/assets/img/thugs.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Report Fraud and Violence</h2>
+                <p class="animate__animated animate__fadeInUp">Receiving any money or gift,
+for voting or to refrain from
+voting at any election is subjected to A maximum fine of N500,000
+or imprisonment for 12
+months or both according to Section 124 Electoral Act
+2010 of The
+Constitution of the Federal Republic of Nigeria, 1999 as amended.
+</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+
+  
+
+  <main id="main">
+
+
+
+
+ <!-- ======= Services Section ======= -->
+ <section id="services" class="services" style="background-color: #206a5d;">
+  <div class="container">
+
+    <div class="section-title">
+      <h2 style="color:white;">Services</h2>
+      <p></p>
+    </div>
+
+    <div class="row" style="color:white;">
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><img src="{% static 'assets/img/alert.png' %}" style="width:50px;"></div>
+        <h4 class="title" ><a href="{% url 'report' %}" style="color:white;">Report</a></h4>
+        <p class="description">Report any act of voter inducement with money or gift with the intend of voter to
+vote or to refrain from
+voting at the election.
+</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><img src="{% static 'assets/img/location.png' %}" style="width:50px;"></div>
+        <h4 class="title"><a href="{% url 'locate' %}" style="color:white;">Locate</a></h4>
+        <p class="description">Locate your neaarest poling unit at the comfort of your phone with a complete 3D view.
+</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><img src="{% static 'assets/img/fake-news.png' %}" style="width:50px;"></div>
+        <h4 class="title"><a href="{% url 'verify' %}" style="color:white;">Verify</a></h4>
+        <p class="description">Verify false or misleading information with the aim of causing division and violence or damage of reputation</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><img src="{% static 'assets/img/influencer.png' %}" style="width:50px;"></div>
+        <h4 class="title"><a href="#contact" style="color:white;">Volunteer</a></h4>
+        <p class="description">be our community champion and influencer by mobilizing and educating your local community on electoral process</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><img src="{% static 'assets/img/webinar.png' %}" style="width:50px;"></div>
+        <h4 class="title"><a href="{% url 'learn' %}" style="color:white;">Learn</a></h4>
+        <p class="description">Learn about the electoral process, the procedures,information,rules and regulations.
+</p>
+      </div>
+      <div class="col-lg-4 col-md-6 icon-box">
+        <div class="icon"><img src="{% static 'assets/img/customer-service.png' %}" style="width:50px;"></div>
+        <h4 class="title"><a href="#contact" style="color:white;">Support</a></h4>
+        <p class="description">contact our support agents with a toll free number or submit a form with a clear details of reasons.</p>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Services Section -->
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p></p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <br>
+               
+              <h3>Address</h3>
+              <address>Q16 Kontagora Road Kaduna,Kaduna, Nigeria</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+234 8146714240</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">alaminmusamagaga@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Electracker</h3>
+              <p>
+                Q16 Kontagora Road Kaduna<br>
+                Kaduna, Nigeria<br><br>
+                <strong>Phone:</strong> +234 8146714240<br>
+                <strong>Email:</strong> alaminmusamagaga@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">violence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fake News</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Ambassador</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>subscribe to our weekly newslater</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Elecktracker</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">Electracker</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

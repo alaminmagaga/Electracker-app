@@ -1,0 +1,206 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Electracker</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+ 
+  <script src="{% static 'tailwind.css' %}"></script>
+  <link rel="stylesheet" href="{% static 'w3.css' %}">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{% url 'index' %}">Elec<span class="bg-white text-black">tracker</span></a></h1>
+    
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="{% url 'index' %}">Home</a></li>
+          <li><a class="nav-link scrollto active" href="{% url 'report' %}">Report</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'learn' %}">Learn</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'learn' %}">Verify</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'locate' %}">Locate</a></li>
+          <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'hausa' %}">Hausa</a></li>  
+             <li><a href="#">Igbo</a></li>  
+              <li><a href="#">Yoruba</a></li>
+              <li><a href="#">Igala</a></li>        </ul>
+            </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+  
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br>
+
+
+  <center>
+  <h2>We believe that news article from {{form_params.newspaper}} could be potentially</h2>
+  
+  {% if ans == 'Real' %}
+    <strong style="font-size: 10rem; color: green;">{{ans}}</strong>
+
+  {% else %}
+    <strong style="font-size: 10rem; color: red;">{{ans}}</strong>
+  
+  {% endif %}
+  
+  </center>
+  
+
+  <form action="{% url 'satisfaction' %}">
+    {% csrf_token %}
+
+    <div class="flex justify-center mt-6">
+      <button type="submit" name="submit_button" class="w-2/3 px-6 py-3 leading-5 bg-green-500 hover:bg-green-800 text-white text-lg transition-colors duration-200 transform  rounded-md  focus:outline-none focus:bg-blue-600">Check out</button>
+  </div>
+
+ 
+  </form>
+
+
+
+  
+<br>
+<br>
+
+
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Electracker</h3>
+              <p>
+                Q16 Kontagora Road Kaduna<br>
+                Kaduna, Nigeria<br><br>
+                <strong>Phone:</strong> +234 8146714240<br>
+                <strong>Email:</strong> alaminmusamagaga@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fraud</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">violence</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fake News</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Ambassador</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Learn</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>subscribe to our weekly newslater</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Elecktracker</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">Electracker</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
