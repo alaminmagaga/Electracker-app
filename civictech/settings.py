@@ -26,7 +26,7 @@ SECRET_KEY = 'bvu)*vk@!q^ynui9&7vwil*d6l*#02ym-l@d%god3umt20!m@n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['electracker.herokuapp.com','127.0.0.1']
 
 
 # Application definition
