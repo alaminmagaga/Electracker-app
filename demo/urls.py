@@ -7,7 +7,6 @@ urlpatterns=[
     path('learn',views.learn,name='learn'),
     path('vote',views.vote,name='vote'),
     path('report',views.report,name='report'),
-    
     path('locate',views.locate,name='locate'),
     path('hausa',views.hausa,name='hausa'),
     path('lge',views.lge,name='lge'),
