@@ -1,1 +1,1 @@
-web: gunicorn civictech.wsgi --log-file -
+web: gunicorn civictech.wsgi
